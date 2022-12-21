@@ -1,0 +1,9 @@
+
+<div class="row">
+    <h3>Todos</h3>
+    <ul>
+        <li *ngFor="let todo of todos$ | async">
+            <app-todo-item [item]="todo"></app-todo-item>
+        </li>
+    </ul>
+</div>
